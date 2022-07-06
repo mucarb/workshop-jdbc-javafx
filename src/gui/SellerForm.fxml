@@ -35,10 +35,6 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Department" GridPane.rowIndex="10">
-               <GridPane.margin>
-                  <Insets top="10.0" />
-               </GridPane.margin></Label>
             <Label text="Id">
                <GridPane.margin>
                   <Insets top="10.0" />
@@ -49,30 +45,6 @@
                   <Insets top="10.0" />
                </GridPane.margin>
             </Label>
-            <TextField fx:id="txtId" editable="false" prefWidth="244.0" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets bottom="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <TextField fx:id="txtName" GridPane.rowIndex="3">
-               <GridPane.margin>
-                  <Insets bottom="5.0" />
-               </GridPane.margin>
-            </TextField>
-            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="12">
-               <children>
-                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onBtnSaveAction" text="Save">
-                     <HBox.margin>
-                        <Insets top="5.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onBtnCancelAction" text="Cancel">
-                     <HBox.margin>
-                        <Insets top="5.0" />
-                     </HBox.margin>
-                  </Button>
-               </children>
-            </HBox>
             <Label text="Email" GridPane.rowIndex="4">
                <GridPane.margin>
                   <Insets top="10.0" />
@@ -88,16 +60,54 @@
                   <Insets top="10.0" />
                </GridPane.margin>
             </Label>
+            <Label text="Department" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin></Label>
+            <TextField fx:id="txtId" editable="false" prefWidth="244.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txtName" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </TextField>
             <TextField fx:id="txtEmail" GridPane.rowIndex="5">
                <GridPane.margin>
                   <Insets bottom="5.0" />
                </GridPane.margin>
             </TextField>
+            <DatePicker fx:id="dpBirthDate" prefHeight="25.0" prefWidth="181.0" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </DatePicker>
             <TextField fx:id="txtBaseSalary" GridPane.rowIndex="9">
                <GridPane.margin>
                   <Insets bottom="5.0" />
                </GridPane.margin>
             </TextField>
+            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="12">
+               <children>
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#onBtnSaveAction" text="Save">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onBtnCancelAction" text="Cancel">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
             <Label fx:id="labelErrorName" textFill="#e40707" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets bottom="5.0" />
@@ -118,16 +128,6 @@
                   <Insets bottom="5.0" />
                </GridPane.margin>
             </Label>
-            <DatePicker fx:id="dpBirthDate" prefHeight="25.0" prefWidth="181.0" GridPane.rowIndex="7">
-               <GridPane.margin>
-                  <Insets bottom="5.0" />
-               </GridPane.margin>
-            </DatePicker>
-            <ComboBox fx:id="comboBoxDepartment" prefWidth="150.0" GridPane.rowIndex="11">
-               <GridPane.margin>
-                  <Insets bottom="5.0" />
-               </GridPane.margin>
-            </ComboBox>
          </children>
       </GridPane>
    </children>
